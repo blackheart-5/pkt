@@ -1,0 +1,102 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Bio card */
+.about-bio-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  transition: var(--transition-default);
+}
+.about-bio-card:hover {
+  border-color: var(--border-hover);
+  background: var(--bg-card-hover);
+}
+
+.bio-text {
+  font-size: 1.02rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.bio-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 20px;
+}
+
+.bio-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+.detail-icon         { color: var(--color-primary); flex-shrink: 0; }
+.detail-icon.success { color: var(--color-success); }
+.bio-detail a:hover  { color: var(--color-primary); }
+.available   { color: var(--color-success); font-weight: 500; }
+.unavailable { color: var(--text-muted);   font-weight: 500; }
+
+/* Skills */
+.skills-col {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.skill-group {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 20px 22px;
+  transition: var(--transition-default);
+}
+.skill-group:hover {
+  border-color: var(--border-hover);
+  background: var(--bg-card-hover);
+}
+
+.skill-group-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-pill {
+  padding: 4px 13px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background: rgba(139, 92, 246, 0.07);
+  border: 1px solid rgba(139, 92, 246, 0.15);
+  color: var(--text-secondary);
+  transition: var(--transition-default);
+  cursor: default;
+}
+.skill-pill:hover {
+  background: rgba(139, 92, 246, 0.15);
+  border-color: rgba(139, 92, 246, 0.35);
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; gap: 28px; }
+}

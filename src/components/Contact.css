@@ -1,0 +1,109 @@
+.contact-inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  position: relative;
+  transition: var(--transition-default);
+}
+.contact-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-glow-primary);
+}
+
+/* Gradient top bar */
+.contact-card-top-bar {
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-accent));
+}
+
+.contact-body {
+  padding: 40px 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Message */
+.contact-message h3 {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+.contact-message p {
+  font-size: 0.97rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 22px;
+}
+
+.email-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 26px;
+  border-radius: var(--radius-sm);
+  font-size: 0.92rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--color-primary), #7c3aed);
+  color: #fff;
+  transition: var(--transition-default);
+  box-shadow: 0 4px 18px rgba(139, 92, 246, 0.3);
+}
+.email-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(139, 92, 246, 0.45);
+}
+
+/* Separator */
+.contact-sep {
+  height: 1px;
+  background: var(--border-color);
+}
+
+/* Socials */
+.socials-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.socials-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  transition: var(--transition-default);
+}
+.social-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background: rgba(139, 92, 246, 0.08);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 580px) {
+  .contact-body { padding: 28px 22px; }
+}
