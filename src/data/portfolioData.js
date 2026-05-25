@@ -1,5 +1,5 @@
 // ============================================================
-// PORTFOLIO DATA — edit this file to customize your portfolio
+// PORTFOLIO DATA
 // ============================================================
 
 export const personalInfo = {
@@ -15,7 +15,7 @@ export const personalInfo = {
   bio: "Computer Science Engineering student at Michigan State University's Honors College with hands-on experience in backend systems, cloud infrastructure, and AI-powered tools. I love building real solutions — from network security monitors to LLM-powered clinical tools.",
   email: "nanakwame200217@outlook.com",
   github: "https://github.com/blackheart-5",
-  linkedin: "https://linkedin.com/in/yourusername",
+  linkedin: "https://www.linkedin.com/in/paul-k-tsekpo",
   twitter: "",           // leave empty to hide
   location: "East Lansing, MI",
   availableForWork: true,
@@ -101,8 +101,8 @@ export const projects = [
     description:
       "A real-time network security monitoring system built in Python using raw ICMP sockets. Detects RTT anomalies, packet loss, and threat intelligence data across distributed nodes via FastAPI streaming. (~400+ hours)",
     technologies: ["Python", "FastAPI", "ICMP", "D3.js", "ASN/Threat Intelligence"],
-    github: "https://github.com/yourusername/network-trace",
-    liveDemo: "",
+    github: "https://github.com/blackheart-5/network_mapping-simulator",
+    liveDemo: "https://network-mapping-simulator-frontend.onrender.com/",
     image: null,
     video: null,
     featured: true,
@@ -113,7 +113,7 @@ export const projects = [
     description:
       "A C11 system-level simulator implementing deterministic process scheduling, concurrency control, virtual memory, and IPC. Features an SV39-style page table walker, Round-Robin/Stride schedulers, Banker's deadlock detection across up to 8 threads, and a 512-byte ring-buffer pipe. (~200+ hours)",
     technologies: ["C", "C11", "OS Concepts", "Concurrency", "Virtual Memory"],
-    github: "https://github.com/yourusername/os-simulator",
+    github: "https://github.com/blackheart-5/os-simulator",
     liveDemo: "",
     image: null,
     video: null,
@@ -125,7 +125,7 @@ export const projects = [
     description:
       "A production-grade REST API built in Python using Flask and boto3, managing cloud infrastructure for concurrent file retrieval and uploads via AWS S3. (~60 hours)",
     technologies: ["Python", "Flask", "boto3", "AWS S3"],
-    github: "https://github.com/yourusername/image-storage-api",
+    github: "https://github.com/blackheart-5/Image-Storage-API-with-AWS-S3",
     liveDemo: "",
     image: null,
     video: null,
@@ -137,7 +137,7 @@ export const projects = [
     description:
       "A full-stack learning platform built with Next.js and MongoDB. Increased active users by 60% in 3 months. Features a spaced repetition algorithm in JavaScript that improved long-term vocabulary retention by 35%. (~100 hours)",
     technologies: ["Next.js", "MongoDB", "JavaScript", "React"],
-    github: "https://github.com/yourusername/literacy-app",
+    github: "https://github.com/blackheart-5/Literacy-App",
     liveDemo: "",
     image: null,
     video: null,
