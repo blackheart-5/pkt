@@ -44,10 +44,10 @@ export const experiences = [
     period: "September 2025 – Present",
     location: "East Lansing, MI",
     description: [
-      "Designed containerized multi-environment test setups using Docker and PowerShell scripts, improving deployment consistency and developer productivity",
-      "Improved CI/CD pipeline reliability and deployment confidence by conducting code reviews and resolving deployment bugs using Git version control",
-      "Built an AWS S3 encrypted file storage system with access policies, reducing manual backup by 30% under high traffic",
-      "Investigated and resolved network security incidents including VPN failures, certificate mismatches, and DNS/DHCP vulnerabilities, recovering access for 100+ users",
+      "Streamlined Docker multi-environment pipelines with PowerShell automation, improving deployment consistency and reducing environment setup time by 40%",
+      "Enhanced CI/CD pipeline stability via Git version control and code reviews, resolving deployment bugs across multiple environments",
+      "Built an AWS S3 file storage system with access policies, reduced manual backup by 30% under high traffic",
+      "Resolved network and authentication failures using Wireshark and system logs, restoring access for 1000+ users",
     ],
     technologies: ["Docker", "PowerShell", "AWS S3", "Git", "CI/CD"],
   },
@@ -142,6 +142,22 @@ export const projects = [
     image: null,
     video: null,
     featured: false,
+  },
+];
+
+export const openSourceContributions = [
+  {
+    id: 1,
+    project: "Microsoft MarkItDown",
+    repo: "https://github.com/microsoft/markitdown",
+    period: "June 2026 – Present",
+    type: "Open-Source Contribution",
+    description: [
+      "Improved archive-processing security by implementing ZIP validation checks to prevent zip bomb attacks and excessive recursive extraction.",
+      "Improved converter maintainability by replacing dynamic configuration passing with a typed context abstraction.",
+      "Preserved plugin compatibility while updating converter interfaces to support the new configuration model.",
+    ],
+    technologies: ["Python", "Security", "API Design", "Open Source"],
   },
 ];
 

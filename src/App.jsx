@@ -4,6 +4,7 @@ import Hero              from './components/Hero'
 import About             from './components/About'
 import Experience        from './components/Experience'
 import Projects          from './components/Projects'
+import OpenSource        from './components/OpenSource'
 import Achievements      from './components/Achievements'
 import Contact           from './components/Contact'
 import './App.css'
@@ -21,6 +22,7 @@ export default function App() {
         <About />
         <Experience />
         <Projects />
+        <OpenSource />
         <Achievements />
         <Contact />
       </main>
