@@ -147,6 +147,19 @@ export const projects = [
 
 export const openSourceContributions = [
   {
+    id: 2,
+    project: "dosbox-staging",
+    repo: "https://github.com/dosbox-staging/dosbox-staging/pull/4930",
+    period: "June 2026 – Present",
+    type: "Open-Source Contribution",
+    description: [
+      "Added log_type and log_path config options to the [dosbox] section, enabling users to route logs to console, file, or both.",
+      "Implemented file logging via Loguru's add_file API with Append mode, storing logs in a logs/ subfolder of the platform config directory.",
+      "Resolved reviewer feedback on cross-platform path handling by using get_config_dir() for correct file placement on Windows, macOS, and Linux.",
+    ],
+    technologies: ["C++", "Loguru", "DOSBox", "Open Source"],
+  },
+  {
     id: 1,
     project: "Microsoft MarkItDown",
     repo: "https://github.com/microsoft/markitdown",
