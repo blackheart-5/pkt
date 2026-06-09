@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { FiMapPin, FiMail, FiCheckCircle } from 'react-icons/fi'
+import { FiMapPin, FiMail } from 'react-icons/fi'
 import { personalInfo, skills } from '../data/portfolioData'
 import './About.css'
 
@@ -46,12 +46,6 @@ export default function About() {
                     <a href={`mailto:${personalInfo.email}`}>{personalInfo.email}</a>
                   </div>
                 )}
-                <div className="bio-detail">
-                  <FiCheckCircle className="detail-icon success" />
-                  <span className={personalInfo.availableForWork ? 'available' : 'unavailable'}>
-                    {personalInfo.availableForWork ? 'Open to new opportunities' : 'Not currently available'}
-                  </span>
-                </div>
               </div>
             </motion.div>
 

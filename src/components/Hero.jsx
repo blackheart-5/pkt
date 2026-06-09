@@ -52,12 +52,6 @@ export default function Hero() {
     <section id="hero" className="hero">
       <motion.div className="hero-content" variants={container} initial="hidden" animate="visible">
 
-        {/* Available badge */}
-        <motion.div className="hero-badge" variants={item}>
-          <span className="badge-dot" />
-          {personalInfo.availableForWork ? 'Available for opportunities' : 'Not currently available'}
-        </motion.div>
-
         {/* Name */}
         <motion.h1 className="hero-name" variants={item}>
           Hi, I'm{' '}
