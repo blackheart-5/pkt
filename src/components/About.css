@@ -21,7 +21,7 @@
 
 .bio-text {
   font-size: 1rem;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   line-height: 1.8;
   margin-bottom: 24px;
 }
@@ -39,7 +39,7 @@
   align-items: center;
   gap: 10px;
   font-size: 0.88rem;
-  color: var(--text-secondary);
+  color: var(--text-primary);
 }
 .detail-icon         { color: var(--color-primary); flex-shrink: 0; }
 .detail-icon.success { color: var(--color-success); }
@@ -89,7 +89,7 @@
   font-weight: 500;
   background: #f1f5f9;
   border: 1px solid var(--border-color);
-  color: var(--text-secondary);
+  color: var(--text-primary);
   transition: var(--transition-default);
   cursor: default;
 }
