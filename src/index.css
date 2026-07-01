@@ -32,21 +32,21 @@
 }
 
 :root {
-  --bg-primary:    #f9fafb;
-  --bg-secondary:  #ffffff;
-  --bg-card:       #ffffff;
-  --bg-card-hover: #f9fafb;
-  --border-color:  #e5e7eb;
-  --border-hover:  #d1d5db;
+  --bg-primary:    #0a0a0a;
+  --bg-secondary:  #111111;
+  --bg-card:       #141414;
+  --bg-card-hover: #1c1c1c;
+  --border-color:  #262626;
+  --border-hover:  #3a3a3a;
 
-  --color-primary:   #2563eb;
-  --color-secondary: #64748b;
-  --color-accent:    #0f172a;
-  --color-success:   #059669;
+  --color-primary:   #3b82f6;
+  --color-secondary: #94a3b8;
+  --color-accent:    #f1f5f9;
+  --color-success:   #10b981;
 
-  --text-primary:   #111827;
-  --text-secondary: #6b7280;
-  --text-muted:     #9ca3af;
+  --text-primary:   #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted:     #64748b;
 
   --font-heading: 'Space Grotesk', sans-serif;
   --font-body:    'Inter', sans-serif;
@@ -59,8 +59,8 @@
   --radius-lg: 14px;
   --radius-xl: 20px;
 
-  --shadow-card:       0 1px 3px rgba(0,0,0,0.07), 0 4px 14px rgba(0,0,0,0.05);
-  --shadow-card-hover: 0 4px 20px rgba(0,0,0,0.1),  0 2px 6px rgba(0,0,0,0.06);
+  --shadow-card:       0 1px 3px rgba(0,0,0,0.5), 0 4px 14px rgba(0,0,0,0.3);
+  --shadow-card-hover: 0 4px 20px rgba(0,0,0,0.6),  0 2px 6px rgba(0,0,0,0.4);
   --shadow-glow-primary:   var(--shadow-card-hover);
   --shadow-glow-secondary: var(--shadow-card-hover);
   --transition-default: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -92,7 +92,7 @@ img, video { max-width: 100%; height: auto; display: block; }
 
 ::-webkit-scrollbar       { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--bg-primary); }
-::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: #333333; border-radius: 3px; }
 
 .container {
   max-width: var(--container-max);
@@ -155,20 +155,20 @@ img, video { max-width: 100%; height: auto; display: block; }
   border-radius: 999px;
   font-size: 0.76rem;
   font-weight: 500;
-  background: #eff6ff;
-  border: 1px solid #bfdbfe;
-  color: var(--color-primary);
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: #60a5fa;
   transition: var(--transition-default);
 }
 
 .tag:hover {
-  background: #dbeafe;
-  border-color: #93c5fd;
+  background: rgba(59, 130, 246, 0.22);
+  border-color: rgba(59, 130, 246, 0.5);
 }
 
 ::selection {
-  background: #bfdbfe;
-  color: #1e40af;
+  background: rgba(59, 130, 246, 0.4);
+  color: #f1f5f9;
 }
 
 :focus-visible {

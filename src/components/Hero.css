@@ -25,31 +25,31 @@
   gap: 8px;
   padding: 6px 14px;
   border-radius: 999px;
-  border: 1px solid rgba(16, 185, 129, 0.4);
-  background: rgba(16, 185, 129, 0.08);
-  color: #059669;
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  background: rgba(52, 211, 153, 0.08);
+  color: #6ee7b7;
   font-size: 0.82rem;
   font-weight: 500;
 }
 .badge-dot {
   width: 7px; height: 7px;
   border-radius: 50%;
-  background: #059669;
+  background: #6ee7b7;
   animation: pulseDot 2.2s ease-in-out infinite;
 }
 @keyframes pulseDot {
-  0%, 100% { box-shadow: 0 0 0 0   rgba(5,150,105,0.4); }
-  50%       { box-shadow: 0 0 0 5px rgba(5,150,105,0);   }
+  0%, 100% { box-shadow: 0 0 0 0   rgba(110,231,183,0.4); }
+  50%       { box-shadow: 0 0 0 5px rgba(110,231,183,0);   }
 }
 
-/* Name — dark on light bg */
+/* Name */
 .hero-name {
   font-family: var(--font-heading);
   font-size: clamp(2.2rem, 5.5vw, 4rem);
   font-weight: 800;
   line-height: 1.12;
   letter-spacing: -0.03em;
-  color: #0f172a;
+  color: #ffffff;
 }
 /* Accent: purple-blue gradient */
 .gradient-text {
@@ -62,7 +62,7 @@
 /* Typing role */
 .hero-role {
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-  color: rgba(15, 23, 42, 0.6);
+  color: rgba(255, 255, 255, 0.65);
   font-weight: 400;
   display: flex;
   align-items: center;
@@ -71,9 +71,8 @@
   gap: 4px;
 }
 .role-prefix { }
-/* WordRotate renders an h1 internally — normalize sizing */
 .role-typed {
-  color: #a855f7;
+  color: #a78bfa;
   font-weight: 600;
   font-size: inherit;
   line-height: inherit;
@@ -83,7 +82,7 @@
 /* Bio */
 .hero-bio {
   font-size: 1.02rem;
-  color: rgba(15, 23, 42, 0.65);
+  color: rgba(255, 255, 255, 0.58);
   line-height: 1.75;
   max-width: 580px;
 }
@@ -105,14 +104,14 @@
   border-radius: var(--radius-sm);
   font-size: 0.92rem;
   font-weight: 600;
-  background: #2563eb;
+  background: #3b82f6;
   color: #fff;
   transition: var(--transition-default);
-  box-shadow: 0 2px 12px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 2px 12px rgba(59, 130, 246, 0.35);
 }
 .btn-primary:hover {
-  background: #1d4ed8;
-  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.55);
+  background: #2563eb;
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.5);
   transform: translateY(-1px);
 }
 .btn-primary svg { transition: transform 0.25s ease; }
@@ -125,14 +124,14 @@
   border-radius: var(--radius-sm);
   font-size: 0.92rem;
   font-weight: 600;
-  border: 1px solid rgba(15, 23, 42, 0.22);
-  color: #374151;
-  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.05);
   transition: var(--transition-default);
 }
 .btn-secondary:hover {
-  border-color: rgba(15, 23, 42, 0.45);
-  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
   transform: translateY(-1px);
 }
 
@@ -144,15 +143,15 @@
   justify-content: center;
   width: 40px; height: 40px;
   border-radius: var(--radius-sm);
-  border: 1px solid rgba(15, 23, 42, 0.15);
-  color: rgba(15, 23, 42, 0.55);
-  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.04);
   transition: var(--transition-default);
 }
 .social-icon:hover {
-  color: #7c3aed;
-  border-color: rgba(124, 58, 237, 0.5);
-  background: rgba(124, 58, 237, 0.07);
+  color: #818cf8;
+  border-color: rgba(129, 140, 248, 0.5);
+  background: rgba(129, 140, 248, 0.1);
   transform: translateY(-2px);
 }
 
@@ -166,14 +165,14 @@
   flex-direction: column;
   align-items: center;
   gap: 5px;
-  color: rgba(15, 23, 42, 0.35);
+  color: rgba(255, 255, 255, 0.28);
   font-size: 0.76rem;
   letter-spacing: 0.04em;
   cursor: pointer;
   padding: 0;
   transition: color 0.2s;
 }
-.scroll-down:hover { color: #7c3aed; }
+.scroll-down:hover { color: #818cf8; }
 
 @media (max-width: 560px) {
   .hero-actions { flex-direction: column; align-items: stretch; }

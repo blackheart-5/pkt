@@ -31,15 +31,15 @@
   height: 44px;
   min-width: 44px;
   border-radius: var(--radius-md);
-  background: #eff6ff;
-  border: 1px solid #bfdbfe;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.3);
   color: var(--color-primary);
   flex-shrink: 0;
   transition: var(--transition-default);
 }
 .ach-card:hover .ach-icon-wrap {
-  background: #dbeafe;
-  border-color: #93c5fd;
+  background: rgba(59, 130, 246, 0.22);
+  border-color: rgba(59, 130, 246, 0.5);
 }
 
 .ach-body { flex: 1; min-width: 0; }

@@ -8,11 +8,11 @@
 
 .navbar.scrolled {
   padding: 12px 0;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(10, 10, 10, 0.88);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-color);
-  box-shadow: 0 1px 8px rgba(0,0,0,0.07);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.4);
 }
 
 .navbar-container {
@@ -121,7 +121,7 @@
   padding: 6px 20px 14px;
   gap: 2px;
   overflow: hidden;
-  background: #ffffff;
+  background: #0d0d0d;
   border-top: 1px solid var(--border-color);
 }
 
@@ -139,7 +139,7 @@
 .mobile-link.active {
   color: var(--color-primary);
   border-left-color: var(--color-primary);
-  background: #eff6ff;
+  background: rgba(59, 130, 246, 0.12);
 }
 
 @media (max-width: 768px) {

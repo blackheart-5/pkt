@@ -95,13 +95,13 @@
   font-weight: 500;
   border: 1px solid var(--border-color);
   color: var(--text-secondary);
-  background: #ffffff;
+  background: #141414;
   transition: var(--transition-default);
 }
 .social-btn:hover {
   border-color: var(--color-primary);
   color: var(--color-primary);
-  background: #eff6ff;
+  background: rgba(59, 130, 246, 0.12);
   transform: translateY(-1px);
 }
 
