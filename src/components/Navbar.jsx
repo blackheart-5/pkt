@@ -47,13 +47,6 @@ export default function Navbar() {
       transition={{ duration: 0.6, ease: 'easeOut' }}
     >
       <div className="navbar-container">
-        {/* Logo */}
-        <button className="navbar-logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <span className="logo-bracket">&lt;</span>
-          <span className="logo-name">{personalInfo.name.split(' ')[0]}</span>
-          <span className="logo-bracket">/&gt;</span>
-        </button>
-
         {/* Desktop links */}
         <ul className="navbar-links">
           {navLinks.map(link => (
