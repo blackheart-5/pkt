@@ -8,8 +8,6 @@
   padding: 120px 24px 80px;
   z-index: 1;
   text-align: center;
-  background: #ffffff;
-  border-bottom: 1px solid var(--border-color);
 }
 
 .hero-content {
@@ -20,47 +18,51 @@
   gap: 20px;
 }
 
-/* Available badge */
+/* Available badge — green on dark */
 .hero-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   padding: 6px 14px;
   border-radius: 999px;
-  border: 1px solid #a7f3d0;
-  background: #f0fdf4;
-  color: #047857;
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  background: rgba(52, 211, 153, 0.08);
+  color: #6ee7b7;
   font-size: 0.82rem;
   font-weight: 500;
 }
 .badge-dot {
   width: 7px; height: 7px;
   border-radius: 50%;
-  background: #059669;
+  background: #6ee7b7;
   animation: pulseDot 2.2s ease-in-out infinite;
 }
 @keyframes pulseDot {
-  0%, 100% { box-shadow: 0 0 0 0   rgba(5,150,105,0.4); }
-  50%       { box-shadow: 0 0 0 5px rgba(5,150,105,0);   }
+  0%, 100% { box-shadow: 0 0 0 0   rgba(110,231,183,0.4); }
+  50%       { box-shadow: 0 0 0 5px rgba(110,231,183,0);   }
 }
 
-/* Name */
+/* Name — white on dark */
 .hero-name {
   font-family: var(--font-heading);
   font-size: clamp(2.2rem, 5.5vw, 4rem);
   font-weight: 800;
   line-height: 1.12;
   letter-spacing: -0.03em;
-  color: var(--text-primary);
+  color: #ffffff;
 }
+/* Accent uses a soft blue gradient on dark bg */
 .gradient-text {
-  color: var(--color-primary);
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Typing role */
 .hero-role {
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.65);
   font-weight: 400;
   display: flex;
   align-items: center;
@@ -69,33 +71,19 @@
   gap: 4px;
 }
 .role-prefix { }
-/* WordRotate renders an h1 internally — normalize it to match the row */
+/* WordRotate renders an h1 internally — normalize sizing */
 .role-typed {
-  color: var(--color-primary);
+  color: #60a5fa;
   font-weight: 600;
   font-size: inherit;
   line-height: inherit;
   margin: 0;
 }
-.cursor {
-  display: inline-block;
-  width: 2px;
-  height: 1.2em;
-  background: var(--color-primary);
-  margin-left: 1px;
-  vertical-align: text-bottom;
-  border-radius: 1px;
-  animation: blink 1s step-end infinite;
-}
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0; }
-}
 
 /* Bio */
 .hero-bio {
   font-size: 1.02rem;
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.6);
   line-height: 1.75;
   max-width: 580px;
 }
@@ -117,14 +105,14 @@
   border-radius: var(--radius-sm);
   font-size: 0.92rem;
   font-weight: 600;
-  background: var(--color-primary);
+  background: #2563eb;
   color: #fff;
   transition: var(--transition-default);
-  box-shadow: 0 2px 8px rgba(37,99,235,0.25);
+  box-shadow: 0 2px 12px rgba(37, 99, 235, 0.4);
 }
 .btn-primary:hover {
   background: #1d4ed8;
-  box-shadow: 0 4px 16px rgba(37,99,235,0.35);
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.55);
   transform: translateY(-1px);
 }
 .btn-primary svg { transition: transform 0.25s ease; }
@@ -137,38 +125,35 @@
   border-radius: var(--radius-sm);
   font-size: 0.92rem;
   font-weight: 600;
-  border: 1px solid var(--border-color);
-  color: var(--text-primary);
-  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.06);
   transition: var(--transition-default);
 }
 .btn-secondary:hover {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.12);
   transform: translateY(-1px);
 }
 
 /* Social icons */
-.hero-socials {
-  display: flex;
-  gap: 8px;
-}
+.hero-socials { display: flex; gap: 8px; }
 .social-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 40px; height: 40px;
   border-radius: var(--radius-sm);
-  border: 1px solid var(--border-color);
-  color: var(--text-secondary);
-  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.04);
   transition: var(--transition-default);
 }
 .social-icon:hover {
-  color: var(--color-primary);
-  border-color: var(--color-primary);
+  color: #60a5fa;
+  border-color: rgba(96, 165, 250, 0.5);
+  background: rgba(96, 165, 250, 0.08);
   transform: translateY(-2px);
-  background: #eff6ff;
 }
 
 /* Scroll indicator */
@@ -181,14 +166,14 @@
   flex-direction: column;
   align-items: center;
   gap: 5px;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.3);
   font-size: 0.76rem;
   letter-spacing: 0.04em;
   cursor: pointer;
   padding: 0;
   transition: color 0.2s;
 }
-.scroll-down:hover { color: var(--color-primary); }
+.scroll-down:hover { color: #60a5fa; }
 
 @media (max-width: 560px) {
   .hero-actions { flex-direction: column; align-items: stretch; }
