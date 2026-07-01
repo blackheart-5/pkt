@@ -16,16 +16,6 @@ export default function Hero() {
       <section id="hero" className="hero">
         <div className="hero-content">
 
-          {/* Available badge */}
-          {personalInfo.availableForWork && (
-            <BlurFade delay={0.1} inView>
-              <div className="hero-badge">
-                <div className="badge-dot" />
-                Available for Opportunities
-              </div>
-            </BlurFade>
-          )}
-
           {/* Name */}
           <BlurFade delay={0.2} inView>
             <h1 className="hero-name">
