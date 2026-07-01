@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(curl *)",
+      "Bash(npx playwright *)",
+      "Bash(node *)",
+      "Bash(npm install *)",
+      "Bash(Remove-Item *)",
+      "Bash(git checkout *)",
+      "Bash(start *)",
+      "Bash(npx vercel *)",
+      "Bash(gh run *)"
+    ]
+  }
+}

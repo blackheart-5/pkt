@@ -69,7 +69,14 @@
   gap: 4px;
 }
 .role-prefix { }
-.role-typed  { color: var(--color-primary); font-weight: 600; }
+/* WordRotate renders an h1 internally — normalize it to match the row */
+.role-typed {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
 .cursor {
   display: inline-block;
   width: 2px;
