@@ -8,11 +8,11 @@
 
 .navbar.scrolled {
   padding: 12px 0;
-  background: rgba(7, 7, 17, 0.88);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-color);
-  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.07);
 }
 
 .navbar-container {
@@ -27,15 +27,14 @@
 /* Logo */
 .navbar-logo {
   font-family: var(--font-heading);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   white-space: nowrap;
-  transition: opacity 0.2s;
   color: var(--text-primary);
-  padding: 0;
   cursor: pointer;
+  transition: opacity 0.2s;
 }
-.navbar-logo:hover { opacity: 0.8; }
+.navbar-logo:hover { opacity: 0.7; }
 .logo-bracket { color: var(--color-primary); }
 .logo-name    { margin: 0 2px; }
 
@@ -49,11 +48,11 @@
 
 .nav-link {
   position: relative;
-  padding: 8px 13px;
-  font-size: 0.88rem;
+  padding: 8px 12px;
+  font-size: 0.875rem;
   font-weight: 500;
   color: var(--text-secondary);
-  transition: color 0.25s;
+  transition: color 0.2s;
   overflow: hidden;
   border-radius: var(--radius-sm);
 }
@@ -63,13 +62,13 @@
 .nav-underline {
   position: absolute;
   bottom: 5px;
-  left: 13px; right: 13px;
+  left: 12px; right: 12px;
   height: 2px;
   border-radius: 1px;
   background: var(--color-primary);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.28s ease;
+  transition: transform 0.25s ease;
 }
 .nav-link:hover .nav-underline,
 .nav-link.active .nav-underline { transform: scaleX(1); }
@@ -77,19 +76,19 @@
 /* GitHub button */
 .btn-github {
   margin-left: 12px;
-  padding: 8px 20px;
+  padding: 7px 18px;
   border: 1px solid var(--color-primary);
   border-radius: var(--radius-sm);
-  font-size: 0.85rem;
+  font-size: 0.845rem;
   font-weight: 600;
   color: var(--color-primary);
+  background: transparent;
   transition: var(--transition-default);
   white-space: nowrap;
 }
 .btn-github:hover {
   background: var(--color-primary);
   color: #fff;
-  box-shadow: var(--shadow-glow-primary);
 }
 
 /* Hamburger */
@@ -102,13 +101,13 @@
   border-radius: var(--radius-sm);
   transition: background 0.2s;
 }
-.hamburger:hover { background: var(--bg-card); }
+.hamburger:hover { background: var(--bg-secondary); }
 .hamburger span {
   display: block;
   width: 22px; height: 2px;
   background: var(--text-primary);
   border-radius: 2px;
-  transition: all 0.28s ease;
+  transition: all 0.25s ease;
   transform-origin: center;
 }
 .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
@@ -119,17 +118,16 @@
 .mobile-menu {
   display: none;
   flex-direction: column;
-  padding: 6px 20px 16px;
+  padding: 6px 20px 14px;
   gap: 2px;
   overflow: hidden;
-  background: rgba(7, 7, 17, 0.96);
-  backdrop-filter: blur(20px);
+  background: #ffffff;
   border-top: 1px solid var(--border-color);
 }
 
 .mobile-link {
-  padding: 12px 14px;
-  font-size: 0.95rem;
+  padding: 11px 14px;
+  font-size: 0.93rem;
   font-weight: 500;
   color: var(--text-secondary);
   text-align: left;
@@ -141,11 +139,11 @@
 .mobile-link.active {
   color: var(--color-primary);
   border-left-color: var(--color-primary);
-  background: rgba(139, 92, 246, 0.06);
+  background: #eff6ff;
 }
 
 @media (max-width: 768px) {
   .navbar-links, .btn-github { display: none; }
-  .hamburger    { display: flex; }
-  .mobile-menu  { display: flex; }
+  .hamburger   { display: flex; }
+  .mobile-menu { display: flex; }
 }

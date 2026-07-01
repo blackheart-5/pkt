@@ -1,7 +1,7 @@
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 36px;
   align-items: start;
 }
 
@@ -10,34 +10,35 @@
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 32px;
+  padding: 30px;
+  box-shadow: var(--shadow-card);
   transition: var(--transition-default);
 }
 .about-bio-card:hover {
+  box-shadow: var(--shadow-card-hover);
   border-color: var(--border-hover);
-  background: var(--bg-card-hover);
 }
 
 .bio-text {
-  font-size: 1.02rem;
+  font-size: 1rem;
   color: var(--text-secondary);
   line-height: 1.8;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .bio-details {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 11px;
   border-top: 1px solid var(--border-color);
-  padding-top: 20px;
+  padding-top: 18px;
 }
 
 .bio-detail {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--text-secondary);
 }
 .detail-icon         { color: var(--color-primary); flex-shrink: 0; }
@@ -50,23 +51,24 @@
 .skills-col {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 16px;
 }
 
 .skill-group {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  padding: 20px 22px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow-card);
   transition: var(--transition-default);
 }
 .skill-group:hover {
   border-color: var(--border-hover);
-  background: var(--bg-card-hover);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .skill-group-label {
-  font-size: 0.78rem;
+  font-size: 0.73rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -77,26 +79,26 @@
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 7px;
 }
 
 .skill-pill {
-  padding: 4px 13px;
+  padding: 4px 12px;
   border-radius: 999px;
-  font-size: 0.8rem;
+  font-size: 0.79rem;
   font-weight: 500;
-  background: rgba(139, 92, 246, 0.07);
-  border: 1px solid rgba(139, 92, 246, 0.15);
+  background: #f1f5f9;
+  border: 1px solid var(--border-color);
   color: var(--text-secondary);
   transition: var(--transition-default);
   cursor: default;
 }
 .skill-pill:hover {
-  background: rgba(139, 92, 246, 0.15);
-  border-color: rgba(139, 92, 246, 0.35);
+  background: #eff6ff;
+  border-color: #bfdbfe;
   color: var(--color-primary);
 }
 
 @media (max-width: 768px) {
-  .about-grid { grid-template-columns: 1fr; gap: 28px; }
+  .about-grid { grid-template-columns: 1fr; gap: 24px; }
 }
