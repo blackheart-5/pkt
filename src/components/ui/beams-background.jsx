@@ -118,17 +118,19 @@ export function BeamsBackground({ className, children, intensity = "strong" }) {
   }, [intensity]);
 
   return (
-    <div className={cn("relative min-h-screen w-full overflow-hidden bg-neutral-950", className)}>
+    <div
+      className={cn("relative min-h-screen w-full overflow-hidden", className)}
+      style={{ backgroundColor: "#f9fafb" }}
+    >
       <canvas
         ref={canvasRef}
         className="absolute inset-0"
-        style={{ filter: "blur(8px)" }}
+        style={{ filter: "blur(8px)", opacity: 0.6 }}
       />
       <motion.div
-        className="absolute inset-0 bg-neutral-950/5"
-        animate={{ opacity: [0.05, 0.15, 0.05] }}
+        className="absolute inset-0"
+        animate={{ opacity: [0.0, 0.06, 0.0] }}
         transition={{ duration: 10, ease: "easeInOut", repeat: Number.POSITIVE_INFINITY }}
-        style={{ backdropFilter: "blur(30px)" }}
       />
       <div className="relative z-10 w-full">
         {children}
