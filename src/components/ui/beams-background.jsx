@@ -22,7 +22,9 @@ export function BeamsBackground({ className, children, intensity = "strong" }) {
   const canvasRef = useRef(null);
   const beamsRef = useRef([]);
   const animationFrameRef = useRef(0);
-  const MINIMUM_BEAMS = 20;
+  const lastFrameRef = useRef(0);
+  const MINIMUM_BEAMS = 10;
+  const FRAME_INTERVAL = 1000 / 30; // cap to 30fps
 
   const opacityMap = { subtle: 0.7, medium: 0.85, strong: 1 };
 
@@ -33,7 +35,8 @@ export function BeamsBackground({ className, children, intensity = "strong" }) {
     if (!ctx) return;
 
     const updateCanvasSize = () => {
-      const dpr = window.devicePixelRatio || 1;
+      // cap DPR at 1 — retina multiplier doubles pixel count for no visible gain
+      const dpr = Math.min(window.devicePixelRatio || 1, 1);
       canvas.width = window.innerWidth * dpr;
       canvas.height = window.innerHeight * dpr;
       canvas.style.width = `${window.innerWidth}px`;
@@ -82,10 +85,18 @@ export function BeamsBackground({ className, children, intensity = "strong" }) {
       ctx.restore();
     }
 
-    function animate() {
+    function animate(timestamp) {
       if (!canvas || !ctx) return;
+
+      // throttle to 30fps — skip frames that arrive too early
+      const elapsed = timestamp - lastFrameRef.current;
+      if (elapsed < FRAME_INTERVAL) {
+        animationFrameRef.current = requestAnimationFrame(animate);
+        return;
+      }
+      lastFrameRef.current = timestamp - (elapsed % FRAME_INTERVAL);
+
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.filter = "blur(35px)";
 
       const totalBeams = beamsRef.current.length;
       beamsRef.current.forEach((beam, index) => {
@@ -98,7 +109,7 @@ export function BeamsBackground({ className, children, intensity = "strong" }) {
       animationFrameRef.current = requestAnimationFrame(animate);
     }
 
-    animate();
+    animationFrameRef.current = requestAnimationFrame(animate);
 
     return () => {
       window.removeEventListener("resize", updateCanvasSize);
@@ -111,13 +122,13 @@ export function BeamsBackground({ className, children, intensity = "strong" }) {
       <canvas
         ref={canvasRef}
         className="absolute inset-0"
-        style={{ filter: "blur(15px)" }}
+        style={{ filter: "blur(8px)" }}
       />
       <motion.div
         className="absolute inset-0 bg-neutral-950/5"
         animate={{ opacity: [0.05, 0.15, 0.05] }}
         transition={{ duration: 10, ease: "easeInOut", repeat: Number.POSITIVE_INFINITY }}
-        style={{ backdropFilter: "blur(50px)" }}
+        style={{ backdropFilter: "blur(30px)" }}
       />
       <div className="relative z-10 w-full">
         {children}

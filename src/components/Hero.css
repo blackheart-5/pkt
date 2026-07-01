@@ -51,12 +51,13 @@
   letter-spacing: -0.03em;
   color: #ffffff;
 }
-/* Accent uses a soft blue gradient on dark bg */
+/* Accent uses a vivid purple-blue gradient with glow */
 .gradient-text {
-  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+  background: linear-gradient(135deg, #818cf8 0%, #a855f7 50%, #60a5fa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  filter: drop-shadow(0 0 18px rgba(168, 85, 247, 0.65)) drop-shadow(0 0 35px rgba(99, 102, 241, 0.35));
 }
 
 /* Typing role */
@@ -73,11 +74,12 @@
 .role-prefix { }
 /* WordRotate renders an h1 internally — normalize sizing */
 .role-typed {
-  color: #60a5fa;
+  color: #c084fc;
   font-weight: 600;
   font-size: inherit;
   line-height: inherit;
   margin: 0;
+  text-shadow: 0 0 16px rgba(192, 132, 252, 0.75), 0 0 32px rgba(168, 85, 247, 0.4);
 }
 
 /* Bio */
