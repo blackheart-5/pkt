@@ -1,14 +1,10 @@
 .app {
   min-height: 100vh;
   position: relative;
+  background: transparent;
 }
 
 main { position: relative; z-index: 1; }
-
-/* Alternate sections with subtle off-white tint */
-#about, #projects, #contact {
-  background: #ffffff;
-}
 
 .site-footer {
   padding: 28px 24px;
@@ -18,5 +14,5 @@ main { position: relative; z-index: 1; }
   font-size: 0.82rem;
   position: relative;
   z-index: 1;
-  background: #ffffff;
+  background: transparent;
 }

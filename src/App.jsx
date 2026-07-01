@@ -1,4 +1,3 @@
-import AnimatedBackground from './components/AnimatedBackground'
 import Navbar            from './components/Navbar'
 import Hero              from './components/Hero'
 import About             from './components/About'
@@ -8,13 +7,14 @@ import Stats             from './components/Stats'
 import OpenSource        from './components/OpenSource'
 import Achievements      from './components/Achievements'
 import Contact           from './components/Contact'
+import { BeamsBackground } from './components/ui/beams-background'
 import './App.css'
 
 export default function App() {
   return (
     <div className="app">
-      {/* Animated floating orbs + grid overlay — fixed behind everything */}
-      <AnimatedBackground />
+      {/* Fixed canvas beam animation — visible behind all sections */}
+      <BeamsBackground />
 
       <Navbar />
 

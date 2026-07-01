@@ -3,7 +3,6 @@ import { FiGithub, FiLinkedin, FiMail, FiArrowDown } from 'react-icons/fi'
 import { personalInfo } from '../data/portfolioData'
 import { WordRotate } from './ui/word-rotate'
 import { BlurFade } from './ui/blur-fade'
-import { BeamsBackground } from './ui/beams-background'
 import './Hero.css'
 
 export default function Hero() {
@@ -14,7 +13,6 @@ export default function Hero() {
   ].filter(s => s.href && s.href !== 'mailto:')
 
   return (
-    <BeamsBackground intensity="strong">
       <section id="hero" className="hero">
         <div className="hero-content">
 
@@ -115,6 +113,5 @@ export default function Hero() {
           <span>Scroll to explore</span>
         </motion.button>
       </section>
-    </BeamsBackground>
   )
 }
