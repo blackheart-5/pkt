@@ -38,7 +38,7 @@ export const skills = {
 export const experiences = [
   {
     id: 1,
-    role: "Software IT Intern",
+    role: "Software Engineer Intern",
     company: "Michigan State University, College of Engineering",
     companyUrl: "https://engineering.msu.edu",
     period: "September 2025 – Present",
