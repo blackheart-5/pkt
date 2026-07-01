@@ -185,9 +185,9 @@ export const achievements = [
   },
   {
     id: 2,
-    title: "GPA: 3.75 – Michigan State University Honors College",
+    title: "GPA: 3.80 – Michigan State University Honors College",
     description:
-      "Maintaining a 3.75 GPA while pursuing a B.S. in Computer Science Engineering within the highly selective Honors College at MSU.",
+      "Maintaining a 3.80 GPA while pursuing a B.S. in Computer Science Engineering within the highly selective Honors College at MSU.",
     date: "2023 – Present",
     icon: "star",
   },
@@ -201,7 +201,7 @@ export const achievements = [
   },
   {
     id: 4,
-    title: "400+ Hour Independent Project – Network-Trace",
+    title: "600+ Hour Independent Project – Network-Trace",
     description:
       "Invested 400+ hours building a production-level real-time network security monitoring system from scratch, spanning Python sockets, FastAPI streaming, and threat intelligence enrichment.",
     date: "September 2025 – April 2026",
