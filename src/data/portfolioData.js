@@ -143,6 +143,18 @@ export const projects = [
     video: null,
     featured: false,
   },
+  {
+    id: 5,
+    title: "CryptoTracker",
+    description:
+      "A real-time cryptocurrency dashboard built with React 18, tracking the top 100 coins by market cap with live prices and 24h changes auto-refreshing every 60s via the CoinGecko API. Features interactive Chart.js price-history charts (7/30/90-day), searchable coins, and a full portfolio module with holdings, weighted-average cost basis, profit/loss, and a doughnut allocation chart — all persisted per user in localStorage.",
+    technologies: ["React", "JavaScript", "Chart.js", "CoinGecko API", "localStorage"],
+    github: "https://github.com/blackheart-5/crpyto-tracker",
+    liveDemo: "https://crpyto-tracker-alpha.vercel.app",
+    image: null,
+    video: null,
+    featured: false,
+  },
 ];
 
 export const openSourceContributions = [

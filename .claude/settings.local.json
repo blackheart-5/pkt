@@ -13,7 +13,10 @@
       "Bash(git checkout *)",
       "Bash(start *)",
       "Bash(npx vercel *)",
-      "Bash(gh run *)"
+      "Bash(gh run *)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(gh api *)"
     ]
   }
 }
