@@ -16,7 +16,6 @@ export const personalInfo = {
   email: "nanakwame200217@outlook.com",
   github: "https://github.com/blackheart-5",
   linkedin: "https://www.linkedin.com/in/paul-k-tsekpo",
-  twitter: "",           // leave empty to hide
   location: "East Lansing, MI",
   availableForWork: true,
 };
@@ -138,7 +137,7 @@ export const projects = [
       "A full-stack learning platform built with Next.js and MongoDB. Increased active users by 60% in 3 months. Features a spaced repetition algorithm in JavaScript that improved long-term vocabulary retention by 35%. (~100 hours)",
     technologies: ["Next.js", "MongoDB", "JavaScript", "React"],
     github: "https://github.com/blackheart-5/Literacy-App",
-    liveDemo: "literacy-app-ten.vercel.app",
+    liveDemo: "https://literacy-app-ten.vercel.app",
     image: null,
     video: null,
     featured: false,
@@ -150,7 +149,7 @@ export const projects = [
       "A real-time cryptocurrency dashboard built with React 18, tracking the top 100 coins by market cap with live prices and 24h changes auto-refreshing every 60s via the CoinGecko API. Features interactive Chart.js price-history charts (7/30/90-day), searchable coins, and a full portfolio module with holdings, weighted-average cost basis, profit/loss, and a doughnut allocation chart — all persisted per user in localStorage.",
     technologies: ["React", "JavaScript", "Chart.js", "CoinGecko API", "localStorage"],
     github: "https://github.com/blackheart-5/crpyto-tracker",
-    liveDemo: "crpyto-tracker-blackheart-5.vercel.app",
+    liveDemo: "https://crpyto-tracker-blackheart-5.vercel.app",
     image: null,
     video: null,
     featured: false,
