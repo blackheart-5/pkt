@@ -51,7 +51,7 @@ export default function Projects() {
           <motion.div className="section-heading" variants={card}>
             <h2>Projects</h2>
             <div className="divider"><span /><div className="dot" /><span /></div>
-            <p>Things I've built that I'm proud of</p>
+            <p>Things I've built</p>
           </motion.div>
 
           {/* Filter tabs */}
