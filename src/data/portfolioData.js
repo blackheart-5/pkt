@@ -154,6 +154,18 @@ export const projects = [
     video: null,
     featured: false,
   },
+  {
+    id: 6,
+    title: "Limit Order Book Simulator",
+    description:
+      "A C++ matching engine sustaining 8.8M orders/sec at 30ns median latency, exposed to Python via pybind11 for order-flow simulation and market impact measurement. Cut cancellation latency 3.3x by replacing hash-based lookups with index-based order tracking.",
+    technologies: ["C++", "Python", "pybind11"],
+    github: "https://github.com/blackheart-5/order_sim",
+    liveDemo: "https://order-sim.onrender.com/",
+    image: null,
+    video: null,
+    featured: false,
+  },
 ];
 
 export const openSourceContributions = [
