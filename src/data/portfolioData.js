@@ -44,6 +44,20 @@ export const coursework = [
 
 export const experiences = [
   {
+    id: 5,
+    role: "Software Security & Assurance Manager | Active Park Assist",
+    company: "Ford Motor Company x Michigan State University | Industry-Sponsored Project",
+    companyUrl: "https://www.egr.msu.edu/cse435/2026/apa2/",
+    period: "August 2026 – Present",
+    location: "East Lansing, MI",
+    description: [
+      "Identified 5 vulnerabilities by analyzing CAN bus spoofing, replay and DoS threats and specifying message authentication and intrusion detection countermeasures",
+      "Achieved 100% threat-to-requirement traceability across 3 attack scenarios by leading UML misuse-case threat modeling",
+      "Protected proprietary sponsor materials by implementing role-based, password-protected access to the project platform, restricting confidential assets to authorized stakeholders",
+    ],
+    technologies: ["CAN Bus", "Threat Modeling", "UML", "Access Control"],
+  },
+  {
     id: 1,
     role: "Software Engineer Intern",
     company: "Michigan State University, College of Engineering",

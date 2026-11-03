@@ -5,7 +5,7 @@ import './Stats.css'
 const stats = [
   { value: 3,   display: '3.8',  label: 'GPA',                suffix: '',   desc: 'MSU Honors College'      },
   { value: 400, display: null,   label: 'Project Hours',       suffix: '+',  desc: 'on personal builds'      },
-  { value: 4,   display: null,   label: 'Work Experiences',    suffix: '',   desc: 'internships & roles'     },
+  { value: 5,   display: null,   label: 'Work Experiences',    suffix: '',   desc: 'internships & roles'     },
   { value: 2,   display: null,   label: 'Open Source PRs',     suffix: '',   desc: 'merged contributions'    },
 ]
 
