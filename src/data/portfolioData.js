@@ -12,7 +12,7 @@ export const personalInfo = {
     "Problem Solver",
     "Systems Engineer",
   ],
-  bio: "Computer Science Engineering student at Michigan State University's Honors College with hands-on experience in backend systems, cloud infrastructure, and AI-powered tools. I love building real solutions — from network security monitors to LLM-powered clinical tools.",
+  bio: "Computer Science student at Michigan State University's Honors College with hands-on experience in backend systems, cloud infrastructure, and AI-powered tools. I love building real solutions — from network security monitors to LLM-powered clinical tools.",
   email: "nanakwame200217@outlook.com",
   github: "https://github.com/blackheart-5",
   linkedin: "https://www.linkedin.com/in/paul-k-tsekpo",
@@ -218,7 +218,7 @@ export const achievements = [
     id: 2,
     title: "GPA: 3.80 – Michigan State University Honors College",
     description:
-      "Maintaining a 3.80 GPA while pursuing a B.S. in Computer Science Engineering within the highly selective Honors College at MSU.",
+      "Maintaining a 3.80 GPA while pursuing a B.S. in Computer Science with a Minor in Business within the highly selective Honors College at MSU.",
     date: "2023 – Present",
     icon: "star",
   },
