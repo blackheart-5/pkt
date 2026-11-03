@@ -22,17 +22,25 @@ export const personalInfo = {
 
 // Skills are grouped by category
 export const skills = {
-  "Programming Languages": ["Python", "C++", "JavaScript", "TypeScript", "SQL", "C"],
-  "Frameworks & Tools": [
-    "React", "Next.js", "Node.js", "Flask", "FastAPI", "Django",
-    "AWS S3", "Docker", "TensorFlow", "MongoDB", "SQLAlchemy",
-    "Git", "Bash", "D3.js", "Postman", "boto3", "Claude Code", "GitHub Copilot",
+  "Languages": ["Python", "C", "C++", "JavaScript", "TypeScript", "WebAssembly"],
+  "Frameworks & Data": [
+    "React", "Node.js", "FastAPI", "Flask", "REST APIs", "MongoDB",
+    "SQLite/SQL", "PostgreSQL", "NumPy", "pandas",
   ],
-  "Testing & Processes": [
-    "Unit Testing", "Pytest", "Google Test", "Debugging",
-    "ETL Pipelines", "CI/CD", "SDLC",
+  "Systems & Infrastructure": [
+    "AWS", "Docker", "Linux", "Git", "CI/CD", "System Design",
+    "Object-Oriented Design", "Concurrency", "Wireshark", "Agile",
+  ],
+  "Security & Testing": [
+    "Threat Modeling", "Access Control", "Pytest", "GoogleTest", "Performance Optimization",
   ],
 };
+
+export const coursework = [
+  "Probability & Statistics", "Matrix Algebra", "Multivariable Calculus",
+  "Algorithms & Data Structures", "Operating Systems", "Computer Networks",
+  "Computer Architecture", "Computer Security", "Software Engineering",
+];
 
 export const experiences = [
   {
@@ -73,8 +81,8 @@ export const experiences = [
     location: "Remote",
     description: [
       "Completed a fellowship applying C++ and SQL to solve data-structure and system-design problems, deepening understanding of algorithmic trade-offs",
-      "Collaborated with Uber engineers using AWS S3 and React to model scalable distributed systems, improving system throughput and scalability",
-      "Leveraged Claude Code as an AI coding assistant to improve LLM usage in SDLC workflows, accelerating development and system design",
+      "Built a distributed load balancer with consistent hashing and health-check failover, benchmarked at 5,000+ req/sec locally across simulated node failures, using Claude Code to accelerate tradeoff analysis and debugging",
+      "Prototyped a real-time location tracking service handling GPS state updates across 100+ concurrent drivers, implementing efficient data streaming to maintain sub-second update latency",
     ],
     technologies: ["C++", "SQL", "AWS S3", "React", "Claude Code"],
   },

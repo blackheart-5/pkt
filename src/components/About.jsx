@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { FiMapPin, FiMail } from 'react-icons/fi'
-import { personalInfo, skills } from '../data/portfolioData'
+import { personalInfo, skills, coursework } from '../data/portfolioData'
 import './About.css'
 
 const container = {
@@ -61,6 +61,15 @@ export default function About() {
                   </div>
                 </div>
               ))}
+
+              <div className="skill-group">
+                <h4 className="skill-group-label">Coursework</h4>
+                <div className="skill-tags">
+                  {coursework.map(course => (
+                    <span key={course} className="skill-pill">{course}</span>
+                  ))}
+                </div>
+              </div>
             </motion.div>
           </div>
 
